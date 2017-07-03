@@ -1,0 +1,27 @@
+#/* compiler's option */ 
+CROSS_COMPILE:= 
+CC            = $(CROSS_COMPILE)gcc
+AS            = $(CROSS_COMPILE)as
+CPP           = $(CC) -E
+AR            = $(CROSS_COMPILE)ar
+NM            = $(CROSS_COMPILE)nm
+STRIP         = $(CROSS_COMPILE)strip
+OBJDUMP       = $(CROSS_COMPILE)objdump
+LD            = $(CROSS_COMPILE)ld
+
+GCC_INIT_FLAG    = -Os -fno-builtin  -fno-signed-char -Wall -Wchar-subscripts -Wmissing-prototypes -Wsign-compare -Wuninitialized  -O -Wnested-externs -Wmissing-declarations
+
+GENEREAL_FLAG = -fomit-frame-pointer  -Dlinux -D__linux__ -Dunix 
+GENEREAL_FLAG   += -D__LITTLE_ENDIAN_BITFIELD -D__BYTE_ORDER=__LITTLE_ENDIAN -D__ELF__ 
+
+GENEREAL_FLAG += -D__ELF__ -fomit-frame-pointer   
+CFLAGS = $(GCC_INIT_FLAG) $(GENEREAL_FLAG)
+#/* obj */
+TARGET=pacgen
+
+SOURCE=$(wildcard *.c)
+OBJS=$(patsubst %.c, %.o, $(SOURCE))
+$(TARGET):$(OBJS)
+	$(CC) $^ -o $@
+clean:
+	rm -rf *.o $(TARGET)

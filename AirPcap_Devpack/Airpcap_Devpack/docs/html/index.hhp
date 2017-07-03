@@ -1,0 +1,47 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=main.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Binary TOC=YES
+Create CHI file=YES
+Title=AirPcap
+
+[WINDOWS]
+main="AirPcap","index.hhc","index.hhk","main.html","main.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+main.html
+airpcap_8h.html
+radiotap_8txt.html
+group__airpcapdefs.html
+group__airpcapfuncs.html
+group__radiotap.html
+modules.html
+annotated.html
+classes.html
+functions.html
+functions_vars.html
+struct__AirpcapBpfHeader.html
+struct__AirpcapChannelInfo.html
+struct__AirpcapDeviceCapabilities.html
+struct__AirpcapDeviceDescription.html
+struct__AirpcapDeviceTimestamp.html
+struct__AirpcapKey.html
+struct__AirpcapKeysCollection.html
+struct__AirpcapMacAddress.html
+struct__AirpcapStats.html
+files.html
+globals.html
+globals_func.html
+globals_type.html
+globals_enum.html
+globals_eval.html
+globals_defs.html
+tabs.css
+tab_b.gif
+tab_l.gif
+tab_r.gif

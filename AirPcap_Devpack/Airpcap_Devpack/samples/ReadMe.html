@@ -1,0 +1,164 @@
+<html>
+	<head>
+		<title>CACE Technologies AirPcap Developer's Pack</title>
+
+	</head>	
+
+	<body>
+	
+	<font face="arial" size="-1">
+			<h1><font size="3">Contents</font></h1>
+			<p><font size="2" face="arial">
+			<a href="#AirPcap_Test_Programs_library">AirPcap Sample Programs Library</a><br>
+			<a href="#How_to_compile_the_tests">How to Compile the Sample 
+			Programs</a><br>
+			<a href="#How_to_run_the_tests">How to Run the Sample Programs</a><br>
+			<a href="#Descriptions_of_Standard_Tests">Sample Programs list</a></font></p>
+			<h1><a name="AirPcap_Test_Programs_library"><font size="3">AirPcap</font></a><font size="3"><a name="AirPcap_Test_Programs_library"> Sample 
+			Programs Library</a></font></h1>
+			<p><font size="-1">The </font>AirPcap 
+			developer's pack contains a complete set of sample programs. They are ideal 
+			to use as starting points for application development or simply to 
+			familiarize yourself with the AirPcap API. </p>
+			<p><font size="-1">Each sample program has its own folder, containing:</font></p>
+			<ul>
+				<li><font size="-1">the C source</font></li>
+				<li><font size="-1">a Visual Studio project </font>
+				(works both with Visual Studio 6 and Visual Studio .NET 
+				2002/2003)</li>
+				<li>a Visual Studio 2005 project (works both on Visual Studio 
+				2005 and 2008 and supports x86 and x64 architectures)</li>
+				<li>a makefile that can be used to compile the program with 
+				cygwin (<a href="http://www.cygwin.com/">http://www.cygwin.com/</a>).</li>
+			</ul>
+			<h1><font size="3"><a name="How_to_compile_the_tests">How to Compile 
+			the Sample Programs</a></font></h1>
+			<p><b>Microsoft Visual Studio 6/2002/2003</b></p>
+	<ul>
+		<li>Open the Visual Studio project double clicking on the .dsw file.</li>
+		<li>Go to the <i>Build</i> menu and select <i>Build Al</i>l. </li>
+		<li>The debug executable will be in the <i>Debug</i> folder. The release 
+		executable will be in the <i>Release</i> folder. </li>
+	</ul>
+	<p><b>Microsoft Visual Studio 2005/2008</b></p>
+	<ul>
+		<li>Open the Visual Studio project double clicking on the .sln file. 
+		</li>
+		<li>Go to the <i>Build</i> menu and select <i>Rebuild Solution</i>. 
+		</li>
+		<li>The debug executable will be in the <i>Debug/&lt;architecture&gt;</i> 
+		folder. The release executable will be in the <i>Release/&lt;architecture&gt;</i> 
+		folder.</li>
+	</ul>
+	<p><b>GCC/cygwin</b></p>
+			<ul>
+				<li>open a cygwin Bash shell.</li>
+				<li>go to the desired sample program folder.</li>
+				<li>type &quot;<i>make</i>&quot;.</li>
+				<li>the executable will be created in the same directory.</li>
+			</ul>
+	<h1><font size="3"><a name="How_to_run_the_tests">How to Run the 
+			Sample Programs</a></font></h1>
+	
+			<p><b>Microsoft Visual Studio</b></p>
+	<ul>
+				<li>Make sure the AirPcap driver and dlls have been installed in 
+				the machine. Refer to the <i>AirPcap Installation Guide</i> that comes with the adapter if you need 
+				help in doing that.</li>
+				<li>After having compiled the 
+				source code, go either to the <i>Debug/&lt;architecture&gt;</i> or <i>Release/&lt;architecture&gt;</i> 
+				folder.</li>
+				<li><font size="-1">Run test.exe.</font></li>
+			</ul>
+			<p><b>GCC/cygwin</b></p>
+	<ul>
+				<li>Make sure the AirPcap driver and dlls have been installed in 
+				the machine. Refer to the <i>AirPcap Installation Guide</i> that comes with the adapter if you need 
+				help in doing that.</li>
+				<li>After having compiled the source code<font size="-1">, just 
+				type &quot;./test.exe&quot;.</font></li>
+			</ul>
+			<h1><font size="3"><a name="Descriptions_of_Standard_Tests">
+			Sample Programs</a> List</font></h1>
+			<p><font size="2">The following is the list of the standard sample 
+			programs provided in the AirPcap developer's pack:</font></p>
+	<p><b>airpcap_and_libpcap<br>
+	</b>This example shows how to use AirPcap and libpcap at the same time to 
+	set the wireless adapter parameters and then receive and print the wireless 
+	packets.<br>
+	The program needs files from both the AirPcap and WinPcap developer's pack, 
+	and ASSUMES THAT THE TWO DEVELOPER'S PACKS ARE UNPACKED IN THE SAME FOLDER.<br>
+	<b><br>
+	SetChannel<br>
+	</b>This program sets the channel the specified AirPcap adapter is listening 
+	on, and saves it as the default channel for that adapter. In this way, 
+	successive accesses to the adapter will use this channel.</p>
+	<p><b>GetMacAddress<br>
+	</b>This program open an adapter, retrieves its mac address, and prints it 
+	on the screen.</p>
+	<p><b>Capture_no_radio<br>
+	</b>This program is a reference of how to use the AirPcap API to receive 
+	802.11 packets with no radio information. <br>
+	Note that the suggested method to receive packets is using WinPcap, as shown 
+	in the &quot;airpcap_and_libpcap&quot; sample program.<br>
+	After opening the adapter specified by the user, this program sets it to 
+	receive bare 802.11 packets (no radiotap header), and then loops capturing 
+	packets, interpreting them, and printing them to the console.</p>
+	<p><b>Capture_radio<br>
+	</b>This program is a reference of how to use the AirPcap API to receive 
+	802.11 packets radiotap-encoded radio information.<br>
+	Note that the suggested method to receive packets is using WinPcap, as shown 
+	in the &quot;airpcap_and_libpcap&quot; sample program.<br>
+	After opening the adapter specified by the user, this program sets it to 
+	receive 802.11 packets with radio information (radiotap header), and then 
+	loops capturing packets, interpreting them, and printing them to the 
+	console.</p>
+	<p>
+	<b>Capture_PPI</b><br>
+	This program is a reference of how to use the AirPcap API to receive 802.11 
+	packets with PPI-encoded information.<br>
+	Note that the suggested method to receive packets is using WinPcap, as shown 
+	in the &quot;airpcap_and_libpcap&quot; sample program.<br>
+	After opening the adapter specified by the user, this program sets it to 
+	receive 802.11 packets with PPI information (PPI header), and then loops 
+	capturing packets, interpreting them, and printing them to the console.<br>
+	<br>
+	<b>Dot11NTransmitterTest</b><br>
+	This program shows how to transmit raw 802.11N frames with an 
+	802.11n-capable adapter (e.g. AirPcap Nx) using the PPI encapsulation to 
+	select the 802.11n modulation (MCS, gap info, 20 or 40MHz channel). <br>
+	<br>
+	<b>HwTimestamp</b><br>
+	This sample shows how to retrieve the current value of the adapter free 
+	running counter used to timestamp packets.<br>
+	<br>
+	<b>Transmit802_11PPI</b><br>
+	This program shows how to transmit raw 802.11 frames, with or without rate 
+	information.<br>
+	<br>
+	<b>MonitorMode</b><br>
+	This example shows how use the AirpcapSetMonitorMode() function to turn 
+	monitor mode on or off. <br>
+	The program asks for the interface number, the channel, and if the adapter 
+	will be set in monitor mode or not. At that point, it starts capturing 
+	packets and displaying them on the screen. <br>
+	<b>NOTE</b>: with AirPcap adapters, monitor mode is on by default, so you 
+	need to use AirpcapSetMonitorMode() only when you want to turn OFF monitor 
+	mode. The main reason to turn monitor mode off is that, when not in monitor 
+	mode, the adapter will acknowledge the data frames sent to its address. This 
+	is useful when the adapter needs to interact with other devices on the 
+	802.11 network, bacause handling the ACKs in software is too slow.<br>
+	<br>
+	<b>AirPcap_AP</b><br>
+	This program allows the user to test the transmission functionality of the 
+	AirPcap adapters by simulating a fake AP. This fake AP should be visible 
+	from any computer in the area.<br>
+	<br>
+	<br>
+&nbsp;<hr>
+	<p align="right">
+	<font size="2">
+	CACE Technologies AirPcap documentation. Copyright (c) 2007-2008 CACE 
+	Technologies, Inc. All rights reserved.</font></font>
+	</body>
+</html>

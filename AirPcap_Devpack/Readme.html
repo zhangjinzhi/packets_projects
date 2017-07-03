@@ -1,0 +1,83 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+	<head>
+		<title>CACE Technologies Developers Resources</title>
+
+		<style>
+<!--
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	}
+-->
+</style>
+		
+	</head>	
+
+	<body>
+	
+	<font face="arial" size="-1">
+			<h1 align="right"><font size="1">Version 4.1.1<br>
+			01/13/2010</font></h1>
+	<h1>
+				<img border="0" src="pics/logo_medium.jpg" width="180" height="81"></h1>
+	<h1><font size="3">Welcome to the AirPcap </font><a name="Introduction">
+	<font size="3">Developers Resources!</font></a></h1>
+			<p>Welcome to CACE Technologies AirPcap development system. Here you 
+			will find everything you need to use an AirPcap adapter in your 
+			application to receive 802.11 packets: Include and lib files, API 
+			documentation, a ready to compile set of example programs. Below, we 
+			depict the relationship among the various software components that 
+			enable your application to use an AirPcap adapter.</p>
+	<div align="center">
+		<table border="1" width="59%" id="table1">
+			<tr>
+				<td rowspan="3">User Level</td>
+				<td width="333" align="center">User Application (e.g., Wireshark)</td>
+			</tr>
+			<tr>
+				<td width="333" align="center">WinPcap DLLs</td>
+			</tr>
+			<tr>
+				<td width="333" align="center">AirPcap.dll</td>
+			</tr>
+			<tr>
+				<td>Windows Operating System</td>
+				<td width="333" align="center">AirPcap Driver</td>
+			</tr>
+			<tr>
+				<td>Hardware Level</td>
+				<td width="333" align="center">AirPcap Adapter (e.g. AirPcap Ex)</td>
+			</tr>
+		</table>
+	</div>
+	<p>The hardware level consists of the CACE Technologies AirPcap adapter. 
+	CACE Technologies provides a driver (Windows 2000/XP/2003/Vista/2008/7 32-bit or 64-bit) 
+	that supports one or more AirPcap adapters.<br>
+	<br>
+	<b>airpcap.dll</b> interfaces directly with the driver and exports a 
+	low-level API that can be used to directly communicate with the adapter. 
+	This API exposes the adapter's configuration setting that cannot be changed with 
+	higher-level APIs: radio channel, WEP keys configuration, and so on. 
+	AirPcap.dll can be used to receive the captured packets too, but this is not 
+	suggested because its receive functionalities are much more complex to 
+	use. </p>
+	<p>To start using the AirPcap API, go to the
+	<a href="Airpcap_Devpack/StartHere.html">AirPcap Developer's Pack 
+	documentation</a>. </p>
+	<p> <b>WinPcap</b> provides a higher-level, portable, Open Source API used by many 
+	popular network tools, including Wireshark, Snort, WinDump, ntop and many others. 
+	WinPcap interfaces with airpcap.dll, but exports a wider set of functions that make 
+	it easier to receive network traffic, create and apply packet filters, 
+	handle different link layers, and manage trace files. The WinPcap developer's pack is located in the
+	<a href="WinPcap_Devpack">WinPcap_Devpack</a> 
+	folder. This folder contains the 
+	<a href="WinPcap_Devpack/docs/html/main.html">WinPcap manual and tutorial</a> too.</p>
+	<p>Both the AirPcap and the WinPcap developer's packs contain sets of sample programs that can be 
+	compiled with either Visual Studio or GCC under the Cygwin environment.</p><hr>
+	<p align="right">
+	<font size="2">
+	CACE Technologies AirPcap documentation. Copyright (c) 2007 - 2010 CACE 
+	Technologies, Inc. All rights reserved.</font></font>
+  	</body>
+</html>

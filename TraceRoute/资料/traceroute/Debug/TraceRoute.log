@@ -1,0 +1,109 @@
+﻿生成启动时间为 2016/10/29 16:07:48。
+     1>项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”在节点 2 上(Build 个目标)。
+     1>正在使用工具版本“12.0”进行生成。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets”中的目标“_CheckForInvalidConfigurationAndPlatform”(入口点): 
+       由于 false 条件，已跳过任务“Error”；( '$(_InvalidConfigurationError)' == 'true' )计算为( '' == 'true' )。
+       由于 false 条件，已跳过任务“Warning”；( '$(_InvalidConfigurationWarning)' == 'true' )计算为( '' == 'true' )。
+       正在使用程序集“Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“Message”任务。
+       任务“Message”
+         Configuration=Debug
+       已完成执行任务“Message”的操作。
+       任务“Message”
+         Platform=Win32
+       已完成执行任务“Message”的操作。
+       由于 false 条件，已跳过任务“Error”；('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)'))计算为('.\Debug\' != '' and !HasTrailingSlash('.\Debug\'))。
+       由于 false 条件，已跳过任务“Error”；('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)'))计算为('obj\' != '' and !HasTrailingSlash('obj\'))。
+       由于 false 条件，已跳过任务“Error”；('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)'))计算为('.\Debug\' != '' and !HasTrailingSlash('.\Debug\'))。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“_CheckForInvalidConfigurationAndPlatform”的操作。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.BuildSteps.Targets”中的目标“_PrepareForBuild”(目标“Build”依赖于它): 
+       由于 false 条件，已跳过任务“CreateItem”；('%(CustomBuild.IncludeFileToTool)'!='')计算为(''!='')。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“_PrepareForBuild”的操作。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets”中的目标“_PrepareForReferenceResolution”(目标“ResolveReferences”依赖于它): 
+       由于 false 条件，已跳过任务“Message”；('$(_REFERENCE_DEBUG)'=='true')计算为(''=='true')。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“_PrepareForReferenceResolution”的操作。
+       由于条件的计算结果为 false，已跳过目标“ComputeCrtSDKReference”；('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false')的计算结果为('StdAfx.cpp;Tracer.cpp;TraceRoute.cpp;TraceRouteDlg.cpp'!='' and 'false'=='true' and '' != 'false')。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets”中的目标“BeforeResolveReferences”(目标“ResolveReferences”依赖于它): 
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“BeforeResolveReferences”的操作。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets”中的目标“AssignProjectConfiguration”(目标“ResolveReferences”依赖于它): 
+       正在使用程序集“Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“AssignProjectConfiguration”任务。
+       任务“AssignProjectConfiguration”
+       已完成执行任务“AssignProjectConfiguration”的操作。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“AssignProjectConfiguration”的操作。
+       已跳过目标“AssignProjectConfiguration”。以前的生成已成功。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets”中的目标“_SplitProjectReferencesByFileExistence”(目标“ResolveProjectReferences”依赖于它): 
+       由于 false 条件，已跳过任务“ResolveNonMSBuildProjectOutput”；('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='')计算为('true'=='true' and ''!='')。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“_SplitProjectReferencesByFileExistence”的操作。
+       由于条件的计算结果为 false，已跳过目标“_RemoveNameMetadataFromProjectReferenceItems”；('@(ProjectReference)'!='')的计算结果为(''!='')。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets”中的目标“ResolveProjectReferences”(目标“ResolveReferences”依赖于它): 
+       由于 false 条件，已跳过任务“MSBuild”；('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '')计算为('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '12.0' != '10.0' and '' != '')。
+       由于 false 条件，已跳过任务“MSBuild”；('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '')计算为('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '12.0' == '10.0' and '' != '')。
+       由于 false 条件，已跳过任务“MSBuild”；('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '')计算为('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '')。
+       由于 false 条件，已跳过任务“MSBuild”；('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '')计算为('' == 'true' and '' != '' and 'true' == 'true' and '' != '')。
+       由于 false 条件，已跳过任务“Warning”；('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '')计算为('' != '' and '' != '')。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“ResolveProjectReferences”的操作。
+       由于条件的计算结果为 false，已跳过目标“FindInvalidProjectReferences”；('$(FindInvalidProjectReferences)' == 'true')的计算结果为('' == 'true')。
+       由于条件的计算结果为 false，已跳过目标“ResolveNativeReferences”；('@(NativeReference)'!='')的计算结果为(''!='')。
+       已跳过目标“_PrepareForReferenceResolution”。以前的生成已成功。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.NetFramework.CurrentVersion.targets”中的目标“GetFrameworkPaths”(目标“ResolveAssemblyReferences”依赖于它): 
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“GetFrameworkPaths”的操作。
+       由于条件的计算结果为 false，已跳过目标“GetWinFXPath”；(('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' ))的计算结果为(('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' ))。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets”中的目标“GetReferenceAssemblyPaths”(目标“ResolveAssemblyReferences”依赖于它): 
+       由于 false 条件，已跳过任务“GetReferenceAssemblyPaths”；('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == ''))计算为('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == ''))。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“GetReferenceAssemblyPaths”的操作。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.targets”中的目标“SetBuildDefaultEnvironmentVariables”(目标“PrepareForBuild”依赖于它): 
+       正在使用程序集“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Build.CppTasks.Common.dll”中的“SetEnv”任务。
+       任务“SetEnv”
+         PATH=E:\micro visual\VC\bin;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools;E:\micro visual\Common7\Tools\bin;E:\micro visual\Common7\tools;E:\micro visual\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\12.0\bin\;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Windows\SysWow64;;C:\ProgramData\Oracle\Java\javapath;E:\Program Files\CodeBlocks\MinGW\bin;E:\Program Files\CodeBlocks\MinGW\libexec\gcc\mingw32\4.7.1;E:\Program Files\CodeBlocks\MinGW\mingw32\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_73\bin;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE;E:\Program Files\CodeBlocks\MinGW\bin;E:\Program Files\CodeBlocks\MinGW\libexec\gcc\mingw32\4.7.1;E:\Program Files\CodeBlocks\MinGW\mingw32\bin;D:\Gtk+\bin;
+       已完成执行任务“SetEnv”的操作。
+       任务“SetEnv”
+         LIB=E:\micro visual\VC\lib;E:\micro visual\VC\atlmfc\lib;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\lib;
+       已完成执行任务“SetEnv”的操作。
+       任务“SetEnv”
+         LIBPATH=E:\micro visual\VC\atlmfc\lib;E:\micro visual\VC\lib;
+       已完成执行任务“SetEnv”的操作。
+       任务“SetEnv”
+         INCLUDE=E:\micro visual\VC\include;E:\micro visual\VC\atlmfc\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include;;
+       已完成执行任务“SetEnv”的操作。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“SetBuildDefaultEnvironmentVariables”的操作。
+       由于条件的计算结果为 false，已跳过目标“SetUserMacroEnvironmentVariables”；('@(BuildMacro)' != '')的计算结果为('' != '')。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets”中的目标“GetResolvedWinMD”(目标“PrepareForBuild”依赖于它): 
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“GetResolvedWinMD”的操作。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets”中的目标“PlatformPrepareForBuild”(目标“PrepareForBuild”依赖于它): 
+       由于 false 条件，已跳过任务“VCMessage”；('$(_Error64bitToolsNotInstalled)' == 'true')计算为('' == 'true')。
+       由于 false 条件，已跳过任务“VCMessage”；('$(ConfigurationPlatformExists)' != 'true')计算为('true' != 'true')。
+       由于 false 条件，已跳过任务“VCMessage”；('$(ToolsetTargetsFound)' != 'true')计算为('true' != 'true')。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“PlatformPrepareForBuild”的操作。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Platforms\Win32\PlatformToolsets\v120_xp\Toolset.targets”中的目标“CheckWindowsSDK71A”(目标“PrepareForBuild”依赖于它): 
+       由于 false 条件，已跳过任务“VCMessage”；('$(WindowsSdkDir_71A)'=='' and '$(UseEnv)' != 'true')计算为('C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\'=='' and '' != 'true')。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“CheckWindowsSDK71A”的操作。
+       已跳过目标“GetFrameworkPaths”。以前的生成已成功。
+       已跳过目标“GetReferenceAssemblyPaths”。以前的生成已成功。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0\CodeAnalysis\Microsoft.CodeAnalysis.targets”中的目标“SetCABuildNativeEnvironmentVariables”(目标“PrepareForBuild”依赖于它): 
+       正在从程序集“C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Build.Tasks.v12.0.dll”初始化任务工厂“CodeTaskFactory”。
+       正在使用来自任务工厂“Code Task Factory”的“SetEnvironmentVariable”任务。
+       任务“SetEnvironmentVariable”
+       已完成执行任务“SetEnvironmentVariable”的操作。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“SetCABuildNativeEnvironmentVariables”的操作。
+     1>来自项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”的文件“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets”中的目标“PrepareForBuild”(目标“ResolveAssemblyReferences”依赖于它): 
+       由于 false 条件，已跳过任务“VCMessage”；('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true')计算为('' != 'true' and 'true' != 'true')。
+       正在使用程序集“Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“MakeDir”任务。
+       任务“MakeDir”
+       已完成执行任务“MakeDir”的操作。
+       由于 false 条件，已跳过任务“VCMessage”；('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary')计算为(''!='true' and 'false'=='true' and 'Application'!='Application' and 'Application'!='DynamicLibrary' and 'Application'!='StaticLibrary')。
+       由于 false 条件，已跳过任务“VCMessage”；('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and ('$(TargetFrameworkVersion)'=='v3.5' or '$(TargetFrameworkVersion)'=='v3.0' or '$(TargetFrameworkVersion)'=='v2.0' ))计算为(''!='true' and 'E:\micro visual\VC\'=='' and '' != 'true' and ('v4.0'=='v3.5' or 'v4.0'=='v3.0' or 'v4.0'=='v2.0' ))。
+       由于 false 条件，已跳过任务“VCMessage”；('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and '$(PlatformToolset)'=='v90')计算为(''!='true' and 'E:\micro visual\VC\'=='' and '' != 'true' and 'v120_xp'=='v90')。
+       由于 false 条件，已跳过任务“VCMessage”；('$(VCInstallDir)'=='' and '$(UseEnv)' != 'true')计算为('E:\micro visual\VC\'=='' and '' != 'true')。
+       由于 false 条件，已跳过任务“VCMessage”；('$(WindowsSDKDir)'=='' and '$(UseEnv)' != 'true')计算为('C:\Program Files (x86)\Windows Kits\8.1\'=='' and '' != 'true')。
+       由于 false 条件，已跳过任务“VCMessage”；('$(IntDirTrailingSlashWarning)'=='true')计算为(''=='true')。
+       由于 false 条件，已跳过任务“VCMessage”；('$(OutDirTrailingSlashWarning)'=='true')计算为(''=='true')。
+       由于 false 条件，已跳过任务“VCMessage”；('%(CompatibilityIssues.Identity)' != '' and '$(DesignTimeBuild)'!='true')计算为('' != '' and ''!='true')。
+       正在使用程序集“C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Build.CppTasks.Common.dll”中的“VCMessage”任务。
+       任务“VCMessage”
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(369,5): error MSB8031: Building an MFC project for a non-Unicode character set is deprecated. You must change the project property to Unicode or download an additional library. See http://go.microsoft.com/fwlink/p/?LinkId=286820 for more information.
+       已完成执行任务“VCMessage”的操作 - 失败。
+     1>已完成在项目“TraceRoute.vcxproj”中生成目标“PrepareForBuild”的操作 - 失败。
+     1>已完成生成项目“C:\Users\zhangjinzhishenzhou\Desktop\traceroute\TraceRoute.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.14
